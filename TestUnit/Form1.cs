@@ -17,8 +17,15 @@ namespace TestUnit
         private void Form1_Load(object sender, EventArgs e)
         {
             udp = new UdpCommand();
+            
+            
             udp.Listen(10009);
             udp.DataInEvent += Udp_DataInEvent;
+
+            AutoConn conn = new AutoConn();
+            conn.ListenSvr("BR1",x=> {
+
+            });
             
         }
 
