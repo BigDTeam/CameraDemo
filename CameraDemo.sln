@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CameraDemo", "CameraDemo\CameraDemo.csproj", "{B50A4384-BF6A-4F8D-BBA1-B91C4B239204}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpDriver", "UdpDriver\UdpDriver.csproj", "{162205B2-C895-45D6-B522-25F51BF49D62}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestUnit", "TestUnit\TestUnit.csproj", "{774DDA8C-2387-4DB9-BFD5-292B2A1BEB8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{B50A4384-BF6A-4F8D-BBA1-B91C4B239204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B50A4384-BF6A-4F8D-BBA1-B91C4B239204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B50A4384-BF6A-4F8D-BBA1-B91C4B239204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{162205B2-C895-45D6-B522-25F51BF49D62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{162205B2-C895-45D6-B522-25F51BF49D62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{162205B2-C895-45D6-B522-25F51BF49D62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{162205B2-C895-45D6-B522-25F51BF49D62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{774DDA8C-2387-4DB9-BFD5-292B2A1BEB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{774DDA8C-2387-4DB9-BFD5-292B2A1BEB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{774DDA8C-2387-4DB9-BFD5-292B2A1BEB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{774DDA8C-2387-4DB9-BFD5-292B2A1BEB8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

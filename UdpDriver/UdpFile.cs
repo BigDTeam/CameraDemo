@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CameraDemo.Model.NetSvr
+namespace UdpDriver
 {
-    class SvrComputerEP:INetSvr
+   public class UdpFile
     {
-
-
-
     }
 }
