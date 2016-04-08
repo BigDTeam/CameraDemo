@@ -12,9 +12,13 @@ namespace UdpDriver
 
         public override bool Listen(int Port)
         {
+            if(_UdpDriver!=null)
+               _UdpDriver.Close();
             if (Port == 0)
                 ListenPort = 10009;//default listen Port
             ListenPort = Port;
+            if (UdpDriver == null)
+                return false;
             try {
                 UdpDriver.BeginReceive(new AsyncCallback(ReceiveCallBack),null);
                 return true;
@@ -26,6 +30,8 @@ namespace UdpDriver
         private void ReceiveCallBack(IAsyncResult ar)
         {
             IPEndPoint remoteEP = new IPEndPoint(IPAddress.Any,0);
+            if (UdpDriver.Client == null || ar==null)
+                return;
             byte[] resultBytes=UdpDriver.EndReceive(ar, ref remoteEP);
             OnDataInEvent(remoteEP,resultBytes);
             UdpDriver.BeginReceive(new AsyncCallback(ReceiveCallBack), null);
@@ -60,6 +66,7 @@ namespace UdpDriver
         public override void Close()
         {
             UdpDriver.Close();
+            Console.WriteLine("Already done close");
             UdpDriver = null;  
         }
 

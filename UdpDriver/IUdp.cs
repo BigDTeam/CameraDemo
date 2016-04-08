@@ -15,7 +15,7 @@ namespace UdpDriver
         /// </summary>
         public int ListenPort { get; set; }
 
-        private UdpClient _UdpDriver;
+        public UdpClient _UdpDriver;
         /// <summary>
         /// Udp Client实例
         /// </summary>
