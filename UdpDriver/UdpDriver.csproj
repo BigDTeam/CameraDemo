@@ -40,8 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoConnect\AutoConn.cs" />
     <Compile Include="AutoConnect\test.cs" />
+    <Compile Include="FileManage\AutoConn.cs" />
     <Compile Include="FileManage\FileAttributes.cs" />
     <Compile Include="FileManage\FileUnit.cs" />
     <Compile Include="FileManage\SerializeFile.cs" />
